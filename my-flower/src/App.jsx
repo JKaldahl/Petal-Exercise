@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import TestGrid from './pages/TestGrid';
 
 function Placeholder({ title }) {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/grid" element={<Placeholder title="Prioritizing Grid" />} />
         <Route path="/flower" element={<Placeholder title="Flower Diagram" />} />
         <Route path="/export" element={<Placeholder title="Export / Share" />} />
+        <Route path="/test-grid" element={<TestGrid />} />
       </Routes>
     </BrowserRouter>
   );
